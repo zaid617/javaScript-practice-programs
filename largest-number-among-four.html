@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = Number(prompt("Enter first number"))
+        let b = Number(prompt("Enter second number"))
+        let c = Number(prompt("Enter third number"))
+        let d = Number(prompt("Enter forth number"))
+
+        if (isNaN(a)&&isNaN(b)&&isNaN(c)&&isNaN(d)) {
+        console.log("please enter a number");
+        }
+        else if (a>=b&&a>=c&&a>=d){
+            console.log(`${a} is the highest number amoung all`)
+        }
+        else if (b>=a&&b>=c&&b>=d){
+            console.log(`${b} is the highest number amoung all`)
+        }
+        else if (c>=b&&c>=a&&c>=d){
+            console.log(`${c} is the highest number amoung all`)
+        }
+        else{
+            console.log(`${d} is the highest number amoung all`)
+        }
+
+
+    </script>
+</body>
+</html>

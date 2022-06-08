@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt("Enter any number"));
+
+        if (num<1) {
+            console.log("Enter a positive number");
+            
+        }
+        else if (isNaN(num)) {
+            console.log("Enter a positive number");
+            
+        }
+        else if(num%2 == 0){
+            console.log(`${num} is an even number`)
+        }
+        else
+        {
+            console.log(`${num} is an odd number`)
+        }
+    </script>
+</body>
+</html>

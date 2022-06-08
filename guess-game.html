@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let guess = Number(prompt("Enter Your Lucky Number"));
+        let luckyNum = Math.floor(Math.random() * (10 - 1) + 1);
+        console.log(luckyNum);
+        for (let i = 0; i = luckyNum; i++) {
+            if (guess < luckyNum) {
+                console.log("Please Guess a Higher Number")
+                guess = Number(prompt("Enter your Lucky Number"))
+            }
+            else if (guess > luckyNum) {
+                console.log("Please Guess a Lower Number")
+                guess = Number(prompt("Enter Your Lucky Number"))
+            }
+            else {
+                console.log("Bingo! You Guess a Correct Number")
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>
