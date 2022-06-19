@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = Number(prompt("Enter any 3 digit number"))
+        b = Number(prompt("Enter any 3 digit number"))
+
+        res_1 = a % 10;
+        res_2 = b % 10;
+
+        if (res_1==res_2) {
+            console.log(`${a} and ${b} have same last digit`);
+        }
+        else{
+            console.log(`${a} and ${b} does not have same last digit`);
+        }
+    </script>
+</body>
+</html>

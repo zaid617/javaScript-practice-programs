@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // program to shuffle the deck of cards
+
+        // declare card elements
+        const suits = ["Spades", "Diamonds", "Club", "Heart"];
+        const values = [
+            "Ace",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "Jack",
+            "Queen",
+            "King",
+        ];
+
+        // empty array to contain cards
+        let deck = [];
+
+        // create a deck of cards
+        for (let i = 0; i < suits.length; i++) {
+            for (let x = 0; x < values.length; x++) {
+                let card = { Value: values[x], Suit: suits[i] };
+                deck.push(card);
+            }
+        }
+
+        for (let i = 1; i < deck.length; i++) {
+            let j = Math.floor(Math.random() * i);
+            let temp = deck[i];
+            deck[i] = deck[j];
+            deck[j] = temp;
+        }
+
+        console.log('The first five cards are:');
+
+
+        for (let i = 0; i < 5; i++) {
+            console.log(`${deck[i].Value} of ${deck[i].Suit}`)
+        }
+    </script>
+</body>
+
+</html>
